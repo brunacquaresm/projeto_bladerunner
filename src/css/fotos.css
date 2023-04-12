@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 16px;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.card {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card:hover {
+transform: scale(1.02)
+}
+
+.banner-1 {
+    background-image: url(https://www.filmcomment.com/wp-content/uploads/sites/2/2017/10/blade-runner-2049-image-ryan-gosling-sylvia-hoeks.jpg);
+}
+
+.banner-2 {
+    background-image: url(https://media.gq.com/photos/59db98fa4ea8866a0b03b2d8/16:9/w_2560%2Cc_limit/blade-runner-sex.jpg);
+}
+
+.banner-3 {
+    background-image: url(../imagens/3.jpg);
+}
+
+.banner-4 {
+    background-image: url(https://www.indiewire.com/wp-content/uploads/2017/05/head-photo-e1494267811280.png);
+
+}
+
+.banner-5 {
+    background-image: url(https://filmandfurniture.com/wp-content/uploads/2018/04/Blade-Runner-2049-luv-chair-film-and-furniture-film-set-3-screening-musings-adjusted-e1576754806478.jpg);
+}
+
+.banner-6 {
+    background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2017/07/blade-runner-2049.jpg);
+}
+
+.banner-7 {
+    background-image: url(https://bullesdeculture.com/bdc-content/uploads/2017/10/blade-runner-2049-image-3.jpg);
+}
+
+.banner-8 {
+    background-image: url(https://outraspalavras.net/wp-content/uploads/2017/10/171007-BladeRunner.jpg);
+}
+
+.banner-9 {
+    background-image: url(http://cinemapopcorner.fr/wp-content/uploads/2020/03/Coverrr-1024x566.jpg);
+}
+
+.banner-10 {
+    background-image: url(https://images-prod.dazeddigital.com/900/azure/dazed-prod/1220/0/1220762.jpg);
+}
+
+.banner-11 {
+    background-image: url(https://www.syfy.com/sites/syfy/files/2019/09/nianderwallace.jpg);
+}
+.banner-12 {
+    background-image: url(https://compote.slate.com/images/4d9f4784-16cc-4bf8-8a99-d14f8debbe13.jpeg?crop=1560%2C1040%2Cx0%2Cy0);
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+        margin-top: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    span {
+        font-size: 13px;
+    }
+
+#cards-container {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.cards-content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 100%;
+}
+
+}

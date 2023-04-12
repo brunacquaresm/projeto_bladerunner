@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font: 19px;
+    transition: .5s;
+    font-size: 16px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://moodformovies.com/assets/images/axsYz-e3472b7910c72cdcbd7a569eece72e94.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 70%;
+}
+
+#sinopse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.description {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 100%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    outline: none;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 35px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 0px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://i.pinimg.com/originals/90/e0/ed/90e0eda0718b1012f3be075fea6bc14e.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/845/978/415/harrison-ford-as-rick-deckard-blade-runner-2049-4k-wallpaper-preview.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/52e5df44e4b060b221f994b8/1515118600979-VJJVQ2B1U8ADC6YGGDG6/e56cdf66a6b841404635be9d4b71e8f4.jpg');
+}
+
+.banner-4 {
+    background-image: url('https://i.pinimg.com/originals/c5/b3/80/c5b3809ebc060c79a301d8f1481aefc0.jpg');
+}
+
+footer {
+    height: 150px;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+        top: 50px;
+    }
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-image: url('https://a-static.mlcdn.com.br/1500x1500/poster-cartaz-blade-runner-2049-a-pop-arte-poster/poparteskins2/15938530676/27924258ea76f4169f3cc90676c95e64.jpeg');
+    }
+
+#trailer-container {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trailer {
+    width: 95%;
+}
+
+#sinopse {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.description {
+    width: 100%;
+}
+
+.button {
+    width: 100%;
+    margin-top: 30px;
+}
+.cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    width: 95%;
+}
+
+span {
+    font-size: 13px;
+}
+
+}

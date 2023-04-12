@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption&family=Fira+Sans:ital,wght@0,100;0,200;1,400;1,500&family=Quicksand:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    list-style: none;
+}
+body {
+    background-image: url('https://classic.exame.com/wp-content/uploads/2017/10/blade-runner-2049.jpg?quality=70&strip=info&w=1024');
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 16px;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#foto {
+    height: 50px;
+    width: 50px;
+    top: 18px;
+    left: 10px;
+    position: relative;
+    border: solid #ccc;
+    border-radius: 50%;
+}
+
+.h6 {
+    background-color: red;
+}
+
+.Tip {
+    Width: 0px;
+    Height: 0px;
+    Position: Absolute;
+    Background: Transparent;
+    Border: 10px Solid #Ccc;
+  }
+  
+  .Tip-Up {
+    Top: -25px; /* Same As(igual a) Body Margin Top + Border */
+    Left: 3px;
+    Border-Right-Color: Transparent;
+    Border-Left-Color: Transparent;
+    Border-Top-Color: Transparent;
+  }
+
+  .Dialogbox {
+    Position: Relative;
+    Max-Width: 100%;
+    Height: Auto;
+    Margin: 25px 10px;
+    Padding: 5px;
+    Background-Color: #000;
+    Border-Radius: 3px;
+    Border: 5px Solid #Ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+  span {
+    margin-left: 10px;
+    
+  }
+  
+  .Message {
+    Min-Height: 30px;
+    Border-Radius: 3px;
+    Font-Family: 'Fira-Sans', sans-serif;
+    Font-Size: 15px;
+    Line-Height: 1.5;
+    Color: white;
+  }
+
+footer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+        top: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    span {
+        font-size: 13px;
+    }
+
+    body {
+        background-position: 70%;
+    }
+
+}
