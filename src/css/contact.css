@@ -6,19 +6,13 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-
+    box-sizing: border-box;
 }
 
 body {
     background-color: black;
- }
-
-.hero-container {
-    background-image: url(http://s2.glbimg.com/ULrXPPnj4EJ1h_yzTYHZwi6P1M8=/smart/e.glbimg.com/og/ed/f/original/2017/10/04/blade_runner.jpg);
-    background-position: 60% 60%;
-    background-size: cover;
-    height: 700px;
 }
+
 header {
     height: 90px;
     display: flex;
@@ -37,9 +31,9 @@ nav {
 }
 
 ul {
-display: flex;
-width: 100%;
-justify-content: space-between;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 li {
@@ -56,77 +50,92 @@ li:hover {
     color: #D21617;
 }
 
+.hero-container {
+    background-image: url(http://s2.glbimg.com/ULrXPPnj4EJ1h_yzTYHZwi6P1M8=/smart/e.glbimg.com/og/ed/f/original/2017/10/04/blade_runner.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area {
+    height: 470px;
+    width: 350px;
+    font-size: 2px; 
+    font-family: 'Fira Sans', sans-serif;
+    backdrop-filter: invert(20%);
+    border-radius: 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     font-size: 30px;
-    margin-bottom: 20px;
     border-color: #000;
     font-family: 'Fira Sans', sans-serif;
-    margin-left: 27%;
-    margin-top: 5px;
+    color: white;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 fieldset {
-    height: 570px;
+    height: 100%;
+    width: 100%;
     border-radius: 2%;
-    color: #33272d;
-    box-shadow: 7px 7px;
-    width: 88,7%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#area {
-  height: 572px;
-  width: 460px;
-  position: absolute;
-  top: 25%;
-  padding-left: 65%;
-  backdrop-filter: invert(20%);
-  font-size: 2px;
-  font-family: 'Fira Sans', sans-serif;
-  line-height: 30px;
-}
-
-#area {
-  display: block;
 }
 
 .label {
-  font-size: 24px;
-  margin-left: 15px;
-}
-
-#CheckBox {
-    margin-top: 2px;
+    color: rgb(74, 8, 83);
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 10px auto;
 }
 
 input {
-    width: 90%;
-    height: 35px;
+    width: 80%;
+    height: 30px;
     font-size: 15px;
     background-color: #fff;
-    margin-left: 1.5px;
-    margin-top: 15px;
+    margin: 10px auto;
+    border-radius: 100px;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 textarea {
-    width: 90%;
-    height: 130px;
+    width: 80%;
+    height: 50px;
     background-color: #fff;
     font-size: 15px;
-    margin-left: 1.5px;
-    margin-top: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 3px;
 }
 
 button {
     height: 40px;
     width: 120px;
     cursor: pointer;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid rgb(74, 8, 83, 0.5);
+    color: rgb(74, 8, 83);
     transition: .5s;
-    margin-left: 1.5px;
-    margin-top: 8px;
-    margin-bottom: 5px;
 }
 
 button:hover {
@@ -159,7 +168,7 @@ span {
 }
 
 @media(max-width: 768px) {
-   .footer-navigation {
+    .footer-navigation {
         display: block;
         top: 20%;
     }
@@ -171,20 +180,27 @@ span {
     span {
         font-size: 13px;
     }
-    
-.hero-container {
-        height: 588px;
 }
 
-    #area {
-        position: static;
-        padding: 0;
-        width: 100%;
+@media(max-width: 410px) {
+    .hero-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('https://w0.peakpx.com/wallpaper/180/462/HD-wallpaper-bladerunner-2049-blade-blade-runner-2049-bladerunner2049-runner-thumbnail.jpg');
+        background-size: cover;
+}
+
+    .area {
+        max-height: 90vh;
+        max-width: 90vw;
     }   
 
-.fieldset {
-        position: static;
-        padding: 100%;
-}
+    h1, label {
+        color: white;
+    }
 
+    input, textarea {
+        width: 95%;
+    }
 }

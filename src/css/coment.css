@@ -9,6 +9,8 @@
 }
 body {
     background-image: url('https://classic.exame.com/wp-content/uploads/2017/10/blade-runner-2049.jpg?quality=70&strip=info&w=1024');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -91,42 +93,39 @@ li:hover {
     Position: Absolute;
     Background: Transparent;
     Border: 10px Solid #Ccc;
-  }
-  
-  .Tip-Up {
+    }
+
+    .Tip-Up {
     Top: -25px; /* Same As(igual a) Body Margin Top + Border */
     Left: 3px;
     Border-Right-Color: Transparent;
     Border-Left-Color: Transparent;
     Border-Top-Color: Transparent;
-  }
+    }
 
-  .Dialogbox {
+    .Dialogbox {
     Position: Relative;
-    Max-Width: 100%;
+    Max-Width: 90%;
     Height: Auto;
     Margin: 25px 10px;
     Padding: 5px;
     Background-Color: #000;
     Border-Radius: 3px;
     Border: 5px Solid #Ccc;
-    display: flex;
-    flex-direction: column;
-  }
+    }
 
-  span {
+    span {
     margin-left: 10px;
+    }
     
-  }
-  
-  .Message {
-    Min-Height: 30px;
-    Border-Radius: 3px;
-    Font-Family: 'Fira-Sans', sans-serif;
-    Font-Size: 15px;
-    Line-Height: 1.5;
-    Color: white;
-  }
+    .Message {
+    min-Height: 30px;
+    border-Radius: 3px;
+    font-Family: 'Fira-Sans', sans-serif;
+    font-Size: 15px;
+    line-Height: 1.5;
+    color: white;
+    }
 
 footer {
     height: 150px;
@@ -168,8 +167,5 @@ span {
         font-size: 13px;
     }
 
-    body {
-        background-position: 70%;
-    }
 
 }
